@@ -1,1 +1,1 @@
-Python 3.6, sklearn, pytroch
+Environment: Python 3.7, sklearn, pytorch,numpy,pandas,matplotlib
