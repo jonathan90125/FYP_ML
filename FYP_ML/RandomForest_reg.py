@@ -6,10 +6,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
 # 创建一些随机的回归数据集
-X, y = make_regression(n_samples=1000, n_features=10, noise=0.1, random_state=42)
+X = np.loadtxt(open("X.csv","rb"), delimiter=",", skiprows=0)
+y = np.loadtxt(open("y.csv","rb"), delimiter=",", skiprows=0)
 
 # 将数据集划分为训练集和测试集
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
 
 # 初始化RandomForestRegressor
 rf_regressor = RandomForestRegressor(n_estimators=100, random_state=42)
