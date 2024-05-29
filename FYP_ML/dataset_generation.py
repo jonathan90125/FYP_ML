@@ -4,7 +4,7 @@ from sklearn.datasets import make_regression
 #design several effective parameters first(linear and onehot)
 
 import numpy as np
-array_length=1000
+array_length=10000
 #有效特征
 #生产量
 array1 = np.random.rand(array_length)*8000+2000
